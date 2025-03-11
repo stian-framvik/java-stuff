@@ -5,9 +5,11 @@ import java.io.File;
 public class FileHarvester {
     public static void main(String[] args) {
 
+        String userName = "User";
+
         // Define source and target directories.
         File sourceDirectory = new File("E:\\Zotero\\storage\\");
-        File targetDirectory = new File("C:\\Users\\stian\\Documents\\Library\\unsorted\\");
+        File targetDirectory = new File("C:\\Users\\" + userName + "\\Documents\\Library\\unsorted\\");
 
         // Run method to list all files in the given directory.
         searchAllFilesInDirectory(sourceDirectory, targetDirectory);
